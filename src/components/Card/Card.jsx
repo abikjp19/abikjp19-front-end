@@ -1,11 +1,11 @@
 import React from 'react';
 import './Card.css';
 
-const Card = () => {
+const Card = (props) => {
 return (
     <div className="container border m-2">
-        <h3>Project name</h3>
-        <p>deskription. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae unde magnam temporibus illum deleniti nemo sapiente ullam accusantium autem fugit a id perspiciatis quas cumque ipsum enim, sit ipsa similique.</p>
+        <h3>{props.name}</h3>
+        <p>{props.description}</p>
         <table className="table bordered  table-sm">
   <tbody>
     <tr>
@@ -18,9 +18,9 @@ return (
     <tr>
     <td></td>
       <td>Not Started</td>
-      <td><a href="#">20/20</a></td>
-      <td><button class="buttonEdit">Edit</button></td>
-      <td><button class="buttonDel">Delete</button></td>
+      <td><a href="/tasks">20/20</a></td>
+      <td><button className="buttonEdit">Edit</button></td>
+      <td><button className="buttonDel">Delete</button></td>
     </tr>
     </tbody>
     </table>

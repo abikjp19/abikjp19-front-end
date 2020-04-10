@@ -22,7 +22,7 @@ return (
   <form className="form-inline my-2 my-lg-0">
     <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
     <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    <button className="btn btn-outline-info my-2 my-sm-0 ml-2" type="submit">Create</button>
+    <button className="btn btn-outline-info my-2 my-sm-0 ml-2" type="submit"><a href="/form">Create</a></button>
   </form>
 </div>
 </nav>);
